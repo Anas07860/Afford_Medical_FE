@@ -68,8 +68,22 @@
       color: #777;
     }
 
-    .card-body .actions {
-      text-align: right;
+    .card-body .train-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      color: #444;
+    }
+
+    .seat-info {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .seat-info span {
+      margin-right: 5px;
     }
 
     .button {
@@ -85,6 +99,13 @@
     .button:hover {
       background-color: #0056b3;
     }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px 0;
+      background-color: #f0f0f0;
+      border-top: 1px solid #ddd;
+    }
   </style>
 </head>
 <body>
@@ -94,46 +115,66 @@
     </div>
     <div class="page-content">
       <div class="card">
-        <div class="card-header">Train Name</div>
+        <div class="card-header">Chennai Exp</div>
         <div class="card-body">
           <div class="train-info">
-            <h2>Chennai Exp</h2>
-            <p>Departure Time: 21:35</p>
-            <!-- Other train details -->
+            <h2>Train Number: 2344</h2>
+            <div class="train-details">
+              <p>Departure Time: 21:35</p>
+              <div class="seat-info">
+                <span>Sleeper: 3 seats</span>
+                <span>AC: 1 seat</span>
+              </div>
+            </div>
           </div>
           <div class="actions">
-            <button class="button">View Details</button>
+            <button class="button">Book Now</button>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-header">Train Name</div>
+        <div class="card-header">Hyderabad Exp</div>
         <div class="card-body">
           <div class="train-info">
-            <h2>Hyderabad Exp</h2>
-            <p>Departure Time: 23:55</p>
-            <!-- Other train details -->
+            <h2>Train Number: 2341</h2>
+            <div class="train-details">
+              <p>Departure Time: 23:55</p>
+              <div class="seat-info">
+                <span>Sleeper: 0 seats</span>
+                <span>AC: 7 seats</span>
+              </div>
+            </div>
           </div>
           <div class="actions">
-            <button class="button">View Details</button>
+            <button class="button">Book Now</button>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-header">Train Name</div>
+        <div class="card-header">Delhi Door Hai Exp</div>
         <div class="card-body">
           <div class="train-info">
-            <h2>Delhi Door Hai Exp</h2>
-            <p>Departure Time: 09:45</p>
-            <!-- Other train details -->
+            <h2>Train Number: 2343</h2>
+            <div class="train-details">
+              <p>Departure Time: 09:45</p>
+              <div class="seat-info">
+                <span>Sleeper: 32 seats</span>
+                <span>AC: 1 seat</span>
+              </div>
+            </div>
           </div>
           <div class="actions">
-            <button class="button">View Details</button>
+            <button class="button">Book Now</button>
           </div>
         </div>
       </div>
       <!-- More train cards -->
     </div>
   </div>
+</div>
+<div class="footer">
+  <p>&copy; 2023 Trains Schedule. All rights reserved.</p>
+</div>
+</div>
 </body>
 </html>
